@@ -1,0 +1,179 @@
+/* Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* solo desktop */
+
+
+/* estilos header */
+header .container-fluid {
+    background-color: #052 ;
+}
+header .navbar .container-fluid .navbar-brand img {
+    height: 5rem;
+}
+
+header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item a {
+    font-size: 20px;
+}
+header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item a .numero-carrito {
+    background-color: #aaa;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+
+
+/* Estilos main */
+main .promo h1 {
+    font-size: 30px ;
+    text-align: center;
+    margin: 1rem;
+}
+
+main .promo h2 {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+main .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container .container__productos .container__productos--menu{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(236, 168, 65, 0.863);
+    box-shadow: 3px 4px 5px;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    height: 26rem;
+    width: 20rem;
+}
+
+.container .container__productos  .container__productos--menu img {
+    border-radius: 2rem;
+    padding: 1rem;
+    height: 50%;
+}
+
+.container .container__productos  .container__productos--menu .container__productos--texto {
+    text-align: center;
+    font-size: 15px ;
+}
+
+.container .container__productos  .container__productos--menu .container__productos--texto h3{
+    font-size: 16px;
+}
+
+.container .container__productos  .container__productos--menu .container__productos--texto .container__productos--precio {
+    font-weight: bold;
+    font-size: 18px;
+}
+.container .container__productos  .container__productos--menu .container__productos--texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .container__productos  .container__productos--menu  .container__productos--boton {
+    align-self: center;
+    border-radius: 1rem;
+    width: 10rem ;
+}
+
+footer {
+    background-color: #052 ;
+    margin-top: 3rem;
+    height: 5rem;
+    text-align: center;
+}
+
+footer h2, h3 {
+    font-size: 20px;
+    padding-top: 1.5rem;
+}
+
+/* estilos pagina carrito */
+
+/* carrito vacio */
+
+.carrito .carrito__contenedor .carrito__contenedor--vacio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    box-shadow: 2px 2px 6px;
+}
+
+.carrito .carrito__contenedor .carrito__productos .carrito__producto--comprar {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    margin: 2.5rem;
+    background-color: rgba(236, 168, 65, 0.863);
+    border-bottom-right-radius: 5rem ;
+    border-top-left-radius: 5rem ;
+}
+.carrito .carrito__contenedor
+.carrito__productos .carrito__producto--comprar img {
+    height: 8rem;
+    border-top-left-radius: 4rem ;
+}
+.carrito .carrito__contenedor .carrito__productos .carrito__producto--comprar h2 {
+    font-size: 25px;
+}
+
+
+.carrito .carrito__funcion{
+    display: flex;
+    justify-content: space-between;
+}
+.carrito .carrito__funcion .carrito__funcion--eliminar {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+}
+.carrito .carrito__funcion .carrito__funcion--eliminar .carrito__funcion--vaciar {
+    background-color: #082;
+    padding: 0.5rem;
+    border-bottom-left-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+}
+.carrito .carrito__funcion .carrito__funcion--comprar{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 2rem;
+}
+.carrito .carrito__funcion .carrito__funcion--comprar .carrito__funcion--precio {
+    border: 1px solid;
+    height: 60px;
+    font-size: 12px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-bottom-left-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    
+}
+.carrito .carrito__funcion .carrito__funcion--comprar .carrito__funcion--compra {
+    padding: 1rem;
+    border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+.carrito .carrito__funcion .carrito__funcion--comprar .carrito__funcion--compra:hover {
+    scale: 1.1;
+}
+
+.disabled {
+    display: none;
+}
+
