@@ -10,7 +10,7 @@ const carritoFuncionComprar = document.querySelector('#carrito-funcion-comprar')
 const botonEliminar = document.querySelectorAll('.carrito__producto--eliminar');
 const botonVaciarCarrito = document.querySelector('#carrito__funcion--eliminar')
 const cuentaTotal = document.querySelector('#total')
-const botonComprar = document.querySelector('#carrito-funcion-comprar')
+const botonComprarCarrito = document.querySelector('#carrito-funcion-comprar')
 
 
 // Funcion para recargar los productos al borrar los elementos
@@ -104,6 +104,15 @@ function totalCompra() {
 
 botonComprarCarrito.addEventListener("click",comprar);
 function comprar () {
+
+    Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: 'Gracias por tu compra, podras retirarlo dentro de 40 minutos!',
+    showConfirmButton: false,
+    timer: 2500
+    })
+
     productosCarrito.length = 0;
     localStorage.setItem("productos-carrito", JSON.stringify(productosCarrito));
 
